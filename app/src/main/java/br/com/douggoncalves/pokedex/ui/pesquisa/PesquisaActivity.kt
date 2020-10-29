@@ -10,6 +10,9 @@ import kotlinx.android.synthetic.main.activity_main.btPesquisar
 import kotlinx.android.synthetic.main.activity_pesquisa.*
 
 class PesquisaActivity : AppCompatActivity() , PesquisaContract.PesquisaView{
+
+    lateinit var pesquisaPresenter: PesquisaPresenter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesquisa)
